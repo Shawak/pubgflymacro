@@ -27,7 +27,6 @@ namespace pubgflymacro
 
         bool onKey(KeyHookEventArgs e)
         {
-            Console.WriteLine(e.Key.ToString("X"));
             if (e.Key == Keys.PageUp)
             {
                 active = !active;
@@ -61,6 +60,8 @@ namespace pubgflymacro
         [STAThread]
         static void Main()
         {
+            Console.WriteLine("PUBG fly macro by Shawak");
+            Console.WriteLine("press PageUp to toggle");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new App());
